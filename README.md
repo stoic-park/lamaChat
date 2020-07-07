@@ -1,8 +1,18 @@
-### side project : lamachat
+## Side Project : lamaChat
 
-socket.io를 이용한 실시간 채팅 서비스를 구현합니다.
+React + socket.io를 이용한 실시간 채팅 서비스를 구현합니다.
 
-### 목표
+### 1.시작하기
+
+#### client
+
+`npm run start`
+
+#### server(local)
+
+`node index.js`
+
+### 2.목표
 
 #### basic
 
