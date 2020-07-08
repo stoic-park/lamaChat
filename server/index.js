@@ -38,12 +38,12 @@ io.on("connection", (socket) => {
       .to(user.room)
       .emit("message", { user: "admin", text: `${user.name}, has joined!` });
 
-    // io.to(user.room).emit("roomData", {
-    //   room: user.room,
-    //   users: getUsersInRoom(user.room),
-    // });
+    io.to(user.room).emit("roomData", {
+      room: user.room,
+      users: getUsersInRoom(user.room),
+    });
 
-    // callback();
+    callback();
     // const error = true;
     // if (error) {
     //   callback({ error: "error" });
@@ -56,10 +56,24 @@ io.on("connection", (socket) => {
     // console.log(user); //
     // 해당 방으로 메세지를
     io.to(user.room).emit("message", { user: user.name, text: message });
+
+    // callback();
   });
 
   socket.on("disconnect", () => {
+    const user = removeUser(socket.id);
     console.log("유저가 떠났습니다..");
+
+    if (user) {
+      io.to(user.room).emit("message", {
+        user: "Admin",
+        text: `${user.name} has left.`,
+      });
+      io.to(user.room).emit("roomData", {
+        room: user.room,
+        users: getUsersInRoom(user.room),
+      });
+    }
   });
 });
 
