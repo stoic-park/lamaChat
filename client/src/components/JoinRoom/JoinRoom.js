@@ -87,7 +87,7 @@ const JoinRoom = () => {
             {/* <div className="joinInnerContainer"> */}
             {/* <h1 className="head">JoinRoom</h1> */}
             <Typography component="h1" variant="h5">
-              Join LamaChat
+              LamaChat
             </Typography>
             {/* <div>
           <input
