@@ -7,6 +7,37 @@ import Messages from "../Messages/Messages";
 import RoomInfo from "../RoomInfo/RoomInfo";
 import Input from "../Input/Input";
 
+// Material-ui
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    margin: 0,
+    padding: 0,
+    height: "100vh",
+    backgroundImage: "url(https://source.unsplash.com/1600x900/?peru,lama)",
+  },
+  appBar: {
+    // position: "static",
+  },
+  paper: {
+    height: "50vh",
+    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(3),
+    padding: theme.spacing(2),
+    [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {
+      marginTop: theme.spacing(6),
+      marginBottom: theme.spacing(6),
+      padding: theme.spacing(3),
+    },
+  },
+}));
+
 let socket;
 
 const Chat = ({ location }) => {
@@ -18,6 +49,9 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState("");
 
   const ENDPOINT = "localhost:5000";
+
+  // material ui style
+  const classes = useStyles();
 
   useEffect(() => {
     // query-string middleware의 사용
@@ -77,27 +111,54 @@ const Chat = ({ location }) => {
   // 2.messages
   // 3.input
   return (
-    <div className="outerContainer">
-      <div className="container">
-        {/* <div className="roominfo">
+    <Grid
+      container
+      // alignItems="flex-start"
+      justify="center"
+      alignContent="center"
+      className={classes.root}
+    >
+      <Grid item component={AppBar} className={classes.appBar} color="default">
+        {/* <AppBar position="absolute" color="default" className={classes.appBar}> */}
+
+        <Typography variant="h6" color="inherit" noWrap>
+          LamaChat
+        </Typography>
+
+        {/* </AppBar> */}
+      </Grid>
+
+      <Grid
+        item
+        xs={12}
+        sm={12}
+        md={8}
+        lg={8}
+        xl={8}
+        component={Paper}
+        className={classes.paper}
+      >
+        <div className="container">
+          {/* <div className="roominfo">
           <div>{room}</div>
           <a href="/">close</a>
         </div> */}
-        <RoomInfo room={room} />
-        <Messages messages={messages} name={name} />
-        <Input
-          message={message}
-          setMessage={setMessage}
-          sendMessage={sendMessage}
-        />
-        {/* <input
+          <RoomInfo room={room} />
+          <Messages messages={messages} name={name} />
+          <Input
+            message={message}
+            setMessage={setMessage}
+            sendMessage={sendMessage}
+          />
+          {/* <input
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           onKeyPress={(e) => (e.key === "Enter" ? sendMessage(e) : null)}
         />
         <button onClick={(e) => sendMessage(e)}>send</button> */}
-      </div>
-    </div>
+        </div>
+      </Grid>
+    </Grid>
   );
 };
 
