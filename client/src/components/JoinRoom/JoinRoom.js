@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     // backgroundImage: "url(https://source.unsplash.com/random)",
-    backgroundImage: "url(https://source.unsplash.com/1600x900/?lama,llama)",
+    backgroundImage: "url(https://source.unsplash.com/1600x900/?lama)",
     // backgroundImage:
     //   "url(https://images.unsplash.com/photo-1518259102261-b40117eabbc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)",
     backgroundRepeat: "no-repeat",

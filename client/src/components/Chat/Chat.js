@@ -10,6 +10,7 @@ import Input from "../Input/Input";
 // Material-ui
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     // position: "static",
+    padding: theme.spacing(2),
   },
   paper: {
     height: "50vh",
@@ -35,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: theme.spacing(6),
       padding: theme.spacing(3),
     },
+  },
+  button: {
+    // position: "flex-end",
   },
 }));
 
@@ -118,20 +123,29 @@ const Chat = ({ location }) => {
       alignContent="center"
       className={classes.root}
     >
-      <Grid item component={AppBar} className={classes.appBar} color="default">
+      <Grid
+        // alignItems="flex-start"
+        item
+        component={AppBar}
+        className={classes.appBar}
+        color="default"
+      >
         {/* <AppBar position="absolute" color="default" className={classes.appBar}> */}
-
-        <Typography variant="h6" color="inherit" noWrap>
-          LamaChat
-        </Typography>
-
+        <Toolbar>
+          <Typography variant="h6" color="inherit" noWrap>
+            LamaChat
+          </Typography>
+          <Button color="inherit" href="/" className={classes.button}>
+            close
+          </Button>
+        </Toolbar>
         {/* </AppBar> */}
       </Grid>
 
       <Grid
         item
-        xs={12}
-        sm={12}
+        xs={10}
+        sm={10}
         md={8}
         lg={8}
         xl={8}
