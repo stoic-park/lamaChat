@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3036a38cf814fd10703a53a10afa293",
+    "revision": "5e97d86bd96226cee772b3607c88233f",
     "url": "/lamaChat/index.html"
   },
   {
-    "revision": "98a3e32c361be67b8e5f",
+    "revision": "3130739f3ad48ce80f89",
     "url": "/lamaChat/static/css/main.4963c6f4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lamaChat/static/js/2.2d6b29b9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "98a3e32c361be67b8e5f",
-    "url": "/lamaChat/static/js/main.990ab31a.chunk.js"
+    "revision": "3130739f3ad48ce80f89",
+    "url": "/lamaChat/static/js/main.1d13475a.chunk.js"
   },
   {
     "revision": "b4191a38961632702606",
