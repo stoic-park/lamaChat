@@ -5,7 +5,7 @@ function RoomInfo({ room }) {
     <div className="roomInfo">
       <div className="leftInfo">{room}</div>
       <div className="rightInfo">
-        <a href="/">close</a>
+        <a href="/lamaChat/">close</a>
       </div>
     </div>
   );

@@ -8,8 +8,8 @@ import Chat from "./components/Chat/Chat";
 // 1. Router 경로 설정
 const App = () => (
   <Router>
-    <Route path="/" exact component={JoinRoom} />
-    <Route path="/chat" component={Chat} />
+    <Route path="/lamaChat/" exact component={JoinRoom} />
+    <Route path="/lamaChat/chat" component={Chat} />
   </Router>
 );
 

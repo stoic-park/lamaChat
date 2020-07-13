@@ -135,7 +135,7 @@ const JoinRoom = () => {
 
               <Link
                 onClick={(e) => (!name || !room ? e.preventDefault() : null)}
-                to={`/chat?name=${name}&room=${room}`}
+                to={`/lamaChat/chat?name=${name}&room=${room}`}
                 // href={`/chat?name=${name}&room=${room}`}
               >
                 {/* <button className="button mt-20" type="submit">
