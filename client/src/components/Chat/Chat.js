@@ -117,27 +117,29 @@ const Chat = ({ location }) => {
   // 2.messages
   // 3.input
   return (
-    <div className="root">
-      {/* <AppBar className="appbar">
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            LamaChat
-          </Typography>
-          <Button color="inherit" href="/lamaChat">
-            close
-          </Button>
-        </Toolbar>
-      </AppBar> */}
-      <div className="chat-screen">
-        <Paper className="container">
-          <RoomInfo room={room} />
-          <Messages messages={messages} name={name} />
-          <Input
-            message={message}
-            setMessage={setMessage}
-            sendMessage={sendMessage}
-          />
-        </Paper>
+    <div className="chatOuterContainer">
+      <div className="chatInnerContainer">
+        <AppBar color="primary" className="appbar">
+          <Toolbar className="toolBar">
+            <Typography variant="h4" color="inherit" noWrap>
+              LamaChat
+            </Typography>
+            <Button color="inherit" href="/lamaChat">
+              close
+            </Button>
+          </Toolbar>
+        </AppBar>
+        <div className="chatScreen">
+          <Paper elevation={5} className="chatScreenPaper">
+            <RoomInfo room={room} />
+            <Messages messages={messages} name={name} />
+            <Input
+              message={message}
+              setMessage={setMessage}
+              sendMessage={sendMessage}
+            />
+          </Paper>
+        </div>
       </div>
     </div>
 

@@ -1,7 +1,19 @@
-/* .inputForm {
+.inputContainer {
   flex: 1;
-} */
+  display: flex;
+  border-top: 2px solid #d3d3d3;
+}
 
-.input-container {
-  flex: 1;
+.input {
+  border: none;
+  border-radius: 0;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+.inputButton {
+  background-color: #90caf9;
+  padding: 20px;
+  width: 20%;
 }

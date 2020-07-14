@@ -1,0 +1,94 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+.joinOuterContainer {
+  height: 100vh;
+}
+
+.joinInnerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.joinImageContainer {
+  display: flex;
+  justify-content: center;
+  flex: 6;
+  height: 100vh;
+  background-size: cover;
+}
+
+.joinImage {
+  flex: 1;
+}
+
+.joinFormContainer {
+  /* height: 100%; */
+  /* width: 100vh; */
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+
+  /* text-align: center; */
+  /* margin-top: 20%; */
+  /* margin: 50px; */
+  padding: 20px;
+}
+
+.joinFormBox {
+  margin: 64px 32px;
+  height: 70%;
+  /* margin-top: 20px; */
+  display: flex;
+  /* flex: 1; */
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.joinForm {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .joinInnerContainer {
+    flex-direction: column;
+  }
+  .joinImageContainer {
+    display: none;
+    /* flex: 1; */
+  }
+
+  .joinFormContainer {
+    flex: 1;
+  }
+}
+
+/* Tablet Device */
+@media screen and (min-width: 768px) and (max-width: 1800px) {
+  .joinInnerContainer {
+    flex-direction: column;
+  }
+  .joinImageContainer {
+    flex: 1;
+  }
+
+  .joinFormContainer {
+    flex: 2;
+  }
+}

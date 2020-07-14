@@ -8,15 +8,18 @@ function RoomInfo({ room }) {
   return (
     <div className="roomInfo">
       <div className="leftInfo">
-        <h3 className="leftInfo-text">{room}</h3>
-        {/* {room} */}
+        <h3 className="leftInfo-text">{`Room : ${room}`}</h3>
       </div>
       <div className="rightInfo">
-        <Link className="rightInfo-close" to={`/lamaChat`}>
-          <Button>close</Button>
-        </Link>
-
-        {/* <a href="/">close</a> */}
+        <Button
+          className="infoButton"
+          // variant="contained"
+          variant="raised"
+          href="/lamaChat"
+          color="inherit"
+        >
+          close
+        </Button>
       </div>
     </div>
   );

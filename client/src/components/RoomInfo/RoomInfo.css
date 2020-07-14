@@ -1,20 +1,31 @@
 .roomInfo {
   flex: 1;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background: #90caf9; */
+  background: #3f51b5;
 }
 
 .leftInfo {
+  /* flex: 0.5; */
   display: flex;
-  flex-direction: start;
   align-items: center;
-  flex: 1;
+  margin-left: 5%;
+  color: white;
+  /* width: 80%; */
 }
 
 .rightInfo {
   display: flex;
-  flex-direction: row;
+  flex: 0.5;
   justify-content: flex-end;
-  align-items: center;
-  flex: 1;
+  margin-right: 5%;
+  color: white;
+  /* width: 20%; */
+}
+
+.infoButton {
+  padding: 20px;
+  /* width: 20%; */
 }

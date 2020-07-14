@@ -8,26 +8,20 @@ const Message = ({ message: { text, user }, name }) => {
     isSentByCurrentUser = true;
   }
   return isSentByCurrentUser ? (
-    <div className="messageContainer-end">
-      <p className="sentMessage-1">{trimmedName}</p>
-      <div className="messageBox-background-blue">
-        <p className="messageText-white">{text}</p>
+    <div className="messageContainer end">
+      <div className="messageBox backgroundLight">
+        <p className="messageText black">{text}</p>
       </div>
+      <p className="sentMessage pl-10">{trimmedName}</p>
     </div>
   ) : (
-    <div className="messageContainer-start">
-      <div className="messageBox-background-light">
-        <p className="messageText-black">{text}</p>
+    <div className="messageContainer start">
+      <p className="sentMessage pr-10">{user}</p>
+      <div className="messageBox backgroundLight">
+        <p className="messageText black">{text}</p>
       </div>
-      <p className="sentMessage-2">{user}</p>
     </div>
   );
-  // return (
-  //   <div>
-  //     <p>{name}</p>
-  //     <p>{text}</p>
-  //   </div>
-  // );
 };
 
 export default Message;
