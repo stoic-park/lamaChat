@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lamaChat/static/css/main.7b8eb4dd.chunk.css",
-    "main.js": "/lamaChat/static/js/main.d9a03f1e.chunk.js",
-    "main.js.map": "/lamaChat/static/js/main.d9a03f1e.chunk.js.map",
+    "main.css": "/lamaChat/static/css/main.68917ca1.chunk.css",
+    "main.js": "/lamaChat/static/js/main.0ba6a8be.chunk.js",
+    "main.js.map": "/lamaChat/static/js/main.0ba6a8be.chunk.js.map",
     "runtime-main.js": "/lamaChat/static/js/runtime-main.0d805478.js",
     "runtime-main.js.map": "/lamaChat/static/js/runtime-main.0d805478.js.map",
-    "static/js/2.aee6f0cd.chunk.js": "/lamaChat/static/js/2.aee6f0cd.chunk.js",
-    "static/js/2.aee6f0cd.chunk.js.map": "/lamaChat/static/js/2.aee6f0cd.chunk.js.map",
+    "static/js/2.af691ed2.chunk.js": "/lamaChat/static/js/2.af691ed2.chunk.js",
+    "static/js/2.af691ed2.chunk.js.map": "/lamaChat/static/js/2.af691ed2.chunk.js.map",
     "index.html": "/lamaChat/index.html",
-    "precache-manifest.0011541433de2ffebebb59109061d6ef.js": "/lamaChat/precache-manifest.0011541433de2ffebebb59109061d6ef.js",
+    "precache-manifest.c6ea0eadf8a7dd3aab68e3417fefbfc1.js": "/lamaChat/precache-manifest.c6ea0eadf8a7dd3aab68e3417fefbfc1.js",
     "service-worker.js": "/lamaChat/service-worker.js",
-    "static/css/main.7b8eb4dd.chunk.css.map": "/lamaChat/static/css/main.7b8eb4dd.chunk.css.map",
-    "static/js/2.aee6f0cd.chunk.js.LICENSE.txt": "/lamaChat/static/js/2.aee6f0cd.chunk.js.LICENSE.txt"
+    "static/css/main.68917ca1.chunk.css.map": "/lamaChat/static/css/main.68917ca1.chunk.css.map",
+    "static/js/2.af691ed2.chunk.js.LICENSE.txt": "/lamaChat/static/js/2.af691ed2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0d805478.js",
-    "static/js/2.aee6f0cd.chunk.js",
-    "static/css/main.7b8eb4dd.chunk.css",
-    "static/js/main.d9a03f1e.chunk.js"
+    "static/js/2.af691ed2.chunk.js",
+    "static/css/main.68917ca1.chunk.css",
+    "static/js/main.0ba6a8be.chunk.js"
   ]
 }
