@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lamaChat/precache-manifest.5ecdca490f0868064e0f1128c9204eda.js"
+  "/lamaChat/precache-manifest.4432dd10ab7719ab1b6976c996c84484.js"
 );
 
 self.addEventListener('message', (event) => {
