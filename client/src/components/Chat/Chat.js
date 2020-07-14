@@ -14,8 +14,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 
 let socket;
 
@@ -89,16 +87,18 @@ const Chat = ({ location }) => {
   return (
     <div className="chatOuterContainer">
       <div className="chatInnerContainer">
-        <AppBar color="primary" className="appbar">
-          <Toolbar className="toolBar">
-            <Typography variant="h4" color="inherit" noWrap>
-              LamaChat
-            </Typography>
-            <Button color="inherit" href="/lamaChat">
-              close
-            </Button>
-          </Toolbar>
-        </AppBar>
+        <div className="appbar">
+          <AppBar color="primary">
+            <Toolbar className="toolBar">
+              <Typography variant="h4" color="inherit" noWrap>
+                LamaChat
+              </Typography>
+              <Button color="inherit" href="/lamaChat">
+                close
+              </Button>
+            </Toolbar>
+          </AppBar>
+        </div>
         <div className="chatScreen">
           <Paper elevation={5} className="chatScreenPaper">
             <RoomInfo room={room} />
