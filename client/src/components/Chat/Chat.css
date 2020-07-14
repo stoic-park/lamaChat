@@ -1,0 +1,27 @@
+.root {
+  margin: 0;
+  padding: 0;
+  /* height: "100vh"; */
+  background-image: url("https://source.unsplash.com/1600x900/?peru, lama");
+  /* background-color: aquamarine; */
+  display: flex;
+  flex: 1;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.appbar {
+  /* flex: 1; */
+}
+
+.container {
+  flex: 1;
+  height: 70vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex: 5; */
+}

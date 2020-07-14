@@ -1,0 +1,20 @@
+.roomInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftInfo {
+  display: flex;
+  flex-direction: start;
+  align-items: center;
+  flex: 1;
+}
+
+.rightInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}

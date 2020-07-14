@@ -1,8 +1,10 @@
 import React from "react";
+import "./Input.css";
 
 const Input = ({ message, setMessage, sendMessage }) => (
   //   return <div className="Input"></div>;
-  <form className="inputForm">
+  // <form className="inputForm">
+  <div className="input-container">
     <input
       className="input"
       type="text"
@@ -12,6 +14,7 @@ const Input = ({ message, setMessage, sendMessage }) => (
       onKeyPress={(e) => (e.key === "Enter" ? sendMessage(e) : null)}
     />
     <button onClick={(e) => sendMessage(e)}>send</button>
-  </form>
+  </div>
+  // </form>
 );
 export default Input;
