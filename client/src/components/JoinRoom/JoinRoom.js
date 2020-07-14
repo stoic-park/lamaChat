@@ -28,7 +28,7 @@ const JoinRoom = () => {
         <div className="joinImageContainer">
           <img
             className="joinImage"
-            src="https://source.unsplash.com/1600x900/?lama"
+            src="https://source.unsplash.com/800x600/?lama"
           />
         </div>
         <div className="joinFormContainer" component={Paper}>
