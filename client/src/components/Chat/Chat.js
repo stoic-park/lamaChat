@@ -25,7 +25,7 @@ const Chat = ({ location }) => {
 
   const [users, setUsers] = useState("");
 
-  const ENDPOINT = "localhost:5000";
+  const ENDPOINT = "https://lamachat.herokuapp.com/";
 
   useEffect(() => {
     // query-string middleware의 사용
